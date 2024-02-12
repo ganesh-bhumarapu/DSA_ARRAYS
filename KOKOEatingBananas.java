@@ -16,7 +16,8 @@ class KOKOEatingBananas{
         }
         return totalH;
     }
-    public static int Solve(int N, int[] piles, int H) {
+    public static int Solve(int N, int[] piles, int H) {// here we take the array as the range between the 1 and the max value
+        // for ex if max is 11 then arr will be 1,2,3,4,5,6,7,8,9,10,11.
         int low=1;
         int high=findMax(piles);
         while(low<=high){
